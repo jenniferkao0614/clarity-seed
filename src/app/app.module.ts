@@ -8,12 +8,15 @@ import { AppComponent } from './app.component';
 import { ROUTING } from "./app.routing";
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
+import { ChartsModule } from 'ng2-charts';
+import { ChartjsDemoComponent } from './chartjs-demo/chartjs-demo.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         AboutComponent,
-        HomeComponent
+        HomeComponent,
+        ChartjsDemoComponent,
     ],
     imports: [
         BrowserAnimationsModule,
@@ -21,7 +24,8 @@ import { AboutComponent } from "./about/about.component";
         FormsModule,
         HttpModule,
         ClarityModule,
-        ROUTING
+        ROUTING,
+        ChartsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -6,16 +6,38 @@
         <span class="title">Clarity</span>
       </a>
     </div>
-      <div class="header-nav" [clr-nav-level]="1">
-          <a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="active"><span class="nav-text">Home</span></a>
-          <a class="nav-link" href="#" [routerLink]="['/about']" routerLinkActive="active"><span class="nav-text">About</span></a>
-      </div>
-    <div class="header-actions">
-    </div>
   </clr-header>
+
   <div class="content-container">
-    <div class="content-area">
-      <router-outlet></router-outlet>
+        <div class="content-area">
+            <router-outlet></router-outlet>
+        </div>
+        <nav class="sidenav">
+            <section class="sidenav-content">
+                <a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="active">
+                    Home
+                </a>
+                <a class="nav-link" href="#" [routerLink]="['/about']" routerLinkActive="active">
+                    About
+                </a>
+                <section class="nav-group collapsible">
+                    <input id="tabexample1" type="checkbox">
+                    <label for="tabexample1">ChartJS Demo</label>
+                    <ul class="nav-list">
+                        <li><a class="nav-link" href="#" [routerLink]="['/chartjs-demo']" routerLinkActive="active">ChartJS1</a></li>
+                        <li><a class="nav-link">Link 2</a></li>
+                    </ul>
+                </section>
+                <section class="nav-group collapsible">
+                    <input id="tabexample2" type="checkbox">
+                    <label for="tabexample2">EChart Demo</label>
+                    <ul class="nav-list">
+                        <li><a class="nav-link">Link 1</a></li>
+                        <li><a class="nav-link">Link 2</a></li>
+                    </ul>
+                </section>
+            </section>
+        </nav>
     </div>
-  </div>
+
 </clr-main-container>
