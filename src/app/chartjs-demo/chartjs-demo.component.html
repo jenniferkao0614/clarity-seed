@@ -1,44 +1,72 @@
 <div class="row">
-    <div class="col-lg-5 col-md-8 col-sm-12 col-xs-12">
+    <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
         <div class="card">
             <div class="card-header">
                 Line Chart
             </div>
             <div class="card-block">
                 <div class="card-text">
-                    <div>
-  			<canvas
-      			    baseChart
-      			    [chartType]="'line'"
-      			    [datasets]="chartData"
-     			    [labels]="chartLabels"
-      			    [options]="chartOptions"
-      		            [legend]="true"
-     			    (chartClick)="onChartClick($event)">
-  		        </canvas>
-		    </div>
+                    <app-linechart></app-linechart>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-lg-5 col-md-8 col-sm-12 col-xs-12">
+    <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
         <div class="card">
             <div class="card-header">
                 Bar Chart
             </div>
             <div class="card-block">
                 <div class="card-text">
-                    <div>
-                        <canvas
-                            baseChart
-                            [chartType]="'bar'"
-                            [datasets]="chartData"
-                            [labels]="chartLabels"
-                            [options]="chartOptions"
-                            [legend]="true"
-                            (chartClick)="onChartClick($event)">
-                        </canvas>
-                    </div>
+		    <app-barchart></app-barchart>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="card-header">
+                Pie Chart
+            </div>
+            <div class="card-block">
+                <div class="card-text">
+                    <app-piechart></app-piechart>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="card-header">
+                Radar Chart
+            </div>
+            <div class="card-block">
+                <div class="card-text">
+                    <app-radarchart></app-radarchart>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="card-header">
+                Doughnut Chart
+            </div>
+            <div class="card-block">
+                <div class="card-text">
+                    <app-doughnutchart></app-doughnutchart>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="card-header">
+                Polar Area Chart
+            </div>
+            <div class="card-block">
+                <div class="card-text">
+                    <app-polarareachart></app-polarareachart>
                 </div>
             </div>
         </div>

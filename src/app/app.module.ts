@@ -10,6 +10,12 @@ import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import { ChartsModule } from 'ng2-charts';
 import { ChartjsDemoComponent } from './chartjs-demo/chartjs-demo.component';
+import { BarchartComponent } from './chartjs-demo/barchart/barchart.component';
+import { LinechartComponent } from './chartjs-demo/linechart/linechart.component';
+import { PiechartComponent } from './chartjs-demo/piechart/piechart.component';
+import { RadarchartComponent } from './chartjs-demo/radarchart/radarchart.component';
+import { DoughnutchartComponent } from './chartjs-demo/doughnutchart/doughnutchart.component';
+import { PolarareachartComponent } from './chartjs-demo/polarareachart/polarareachart.component';
 
 @NgModule({
     declarations: [
@@ -17,6 +23,12 @@ import { ChartjsDemoComponent } from './chartjs-demo/chartjs-demo.component';
         AboutComponent,
         HomeComponent,
         ChartjsDemoComponent,
+        BarchartComponent,
+        LinechartComponent,
+        PiechartComponent,
+        RadarchartComponent,
+        DoughnutchartComponent,
+        PolarareachartComponent,
     ],
     imports: [
         BrowserAnimationsModule,

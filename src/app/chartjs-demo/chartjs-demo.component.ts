@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-
+import { BarchartComponent } from './barchart/barchart.component';
+import { LinechartComponent} from './linechart/linechart.component';
+import { PiechartComponent } from './piechart/piechart.component';
+import { RadarchartComponent } from './radarchart/radarchart.component';
+import { DoughnutchartComponent } from './doughnutchart/doughnutchart.component';
+import { PolarareachartComponent } from './polarareachart/polarareachart.component';
 @Component({
   selector: 'app-chartjs-demo',
   templateUrl: './chartjs-demo.component.html',
@@ -7,21 +12,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChartjsDemoComponent {
 
-
-  chartOptions = {
-    responsive: true
-  };
-
-  chartData = [
-    { data: [330, 600, 260, 700], label: 'Account A' },
-    { data: [120, 455, 100, 340], label: 'Account B' },
-    { data: [45, 67, 800, 500], label: 'Account C' }
-  ];
-
-  chartLabels = ['January', 'February', 'Mars', 'April'];
-
-  onChartClick(event) {
-    console.log(event);
-  }
+  
+  
 
 }
