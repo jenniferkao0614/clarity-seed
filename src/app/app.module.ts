@@ -16,6 +16,7 @@ import { PiechartComponent } from './chartjs-demo/piechart/piechart.component';
 import { RadarchartComponent } from './chartjs-demo/radarchart/radarchart.component';
 import { DoughnutchartComponent } from './chartjs-demo/doughnutchart/doughnutchart.component';
 import { PolarareachartComponent } from './chartjs-demo/polarareachart/polarareachart.component';
+import { EchartsDemoComponent } from './echarts-demo/echarts-demo.component';
 
 @NgModule({
     declarations: [
@@ -29,6 +30,7 @@ import { PolarareachartComponent } from './chartjs-demo/polarareachart/polararea
         RadarchartComponent,
         DoughnutchartComponent,
         PolarareachartComponent,
+        EchartsDemoComponent,
     ],
     imports: [
         BrowserAnimationsModule,

@@ -9,12 +9,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ChartjsDemoComponent } from './chartjs-demo/chartjs-demo.component';
-
+import { EchartsDemoComponent } from './echarts-demo/echarts-demo.component';
 export const ROUTES: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: 'home', component: HomeComponent},
     {path: 'about', component: AboutComponent},
-    {path: 'chartjs-demo', component: ChartjsDemoComponent}
+    {path: 'chartjs-demo', component: ChartjsDemoComponent},
+    {path: 'echarts-demo', component: EchartsDemoComponent}
 ];
 
 export const ROUTING: ModuleWithProviders = RouterModule.forRoot(ROUTES);
