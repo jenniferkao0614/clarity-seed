@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './echarts-demo.component.html',
   styleUrls: ['./echarts-demo.component.scss']
 })
-export class EchartsDemoComponent implements OnInit {
+export class EchartsDemoComponent {
 
-  constructor() { }
 
-  ngOnInit() {
-  }
 
 }
