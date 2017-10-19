@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ClarityModule } from 'clarity-angular';
 import { AppComponent } from './app.component';
-import { ROUTING } from "./app.routing";
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import { ChartsModule } from 'ng2-charts';
@@ -19,7 +18,15 @@ import { PolarareachartComponent } from './chartjs-demo/polarareachart/polararea
 import { AngularEchartsModule } from 'ngx-echarts';
 import { EchartsDemoComponent } from './echarts-demo/echarts-demo.component';
 import { ElinechartComponent } from './echarts-demo/elinechart/elinechart.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const appRoutes: Routes = [
+    {path: '', redirectTo: 'home', pathMatch: 'full'},
+    {path: 'home', component: HomeComponent},
+    {path: 'about', component: AboutComponent},
+    {path: 'chartjs-demo', component: ChartjsDemoComponent},
+    {path: 'echarts-demo', component: EchartsDemoComponent}
+];
 
 @NgModule({
     declarations: [
@@ -42,9 +49,12 @@ import { ElinechartComponent } from './echarts-demo/elinechart/elinechart.compon
         FormsModule,
         HttpModule,
         ClarityModule,
-        ROUTING,
         ChartsModule,
-	AngularEchartsModule
+	AngularEchartsModule,
+	RouterModule.forRoot(
+    	  appRoutes,
+          { enableTracing: true } // <-- debugging purposes only
+    )
     ],
     providers: [],
     bootstrap: [AppComponent]
