@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { ElinechartComponent } from './elinechart/elinechart.component';
 
 @Component({
   selector: 'app-echarts-demo',
   templateUrl: './echarts-demo.component.html',
   styleUrls: ['./echarts-demo.component.scss']
 })
-export class EchartsDemoComponent implements OnInit {
+export class EchartsDemoComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }
